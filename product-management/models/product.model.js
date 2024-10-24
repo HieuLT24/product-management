@@ -13,6 +13,7 @@ const productSchema = new mongoose.Schema(
         deleted: Boolean
     }
 );
+// tạo một model có tên là Product từ schema productSchema. Model này sẽ được liên kết với collection có tên là 'products' trong MongoDB
 const Product = mongoose.model('Product', productSchema, 'products');
 
 module.exports = Product;
